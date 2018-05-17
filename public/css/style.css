@@ -1,0 +1,332 @@
+
+/*******************************************************\
+                    Generic Style
+\*******************************************************/
+
+html, body {
+    height: 100%;
+    background: #34c6d3;
+    color: #333333;
+}
+
+.icon {
+    color: #999;
+}
+
+a,
+a:link,
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.my-0 {
+    margin: 0;
+}
+
+.my-3 {
+    margin: 10px 0;
+}
+
+.mt-5 {
+    margin-top: 26px!important;
+}
+
+.highlight {
+    border-bottom: 2px solid #34c6d3;
+    display: block;
+}
+
+.task-app__container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 350px;
+    height: 546px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fafafa;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+    max-width: 360px;
+}
+
+
+/*******************************************************\
+               Task and Notification
+\*******************************************************/
+
+
+/*******************************************************\
+               Search Bar Modal
+\*******************************************************/
+
+.search-bar__container {
+    width: 300px;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
+
+/*******************************************************\
+                    Icon Style
+\*******************************************************/
+.fa-plus {
+    padding-top: 6px;
+}
+
+.fa-folder {
+    margin-left: 20px;
+}
+
+.delete-icon__container {
+    padding-top: 9px;
+    padding-left: 10px;
+}
+
+/*******************************************************\
+               Add/Update Task Modal
+\*******************************************************/
+
+.add-task__input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px 5px;
+    background: #e8ebed;
+    margin: 0;
+    outline: 0;
+    border: 2px solid #e8ebed;
+}
+
+.modal-custom {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 65%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 16%);
+}
+
+
+/*******************************************************\
+               Task List
+\*******************************************************/
+.task-list__container {
+    height: 354px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.task-list {
+    height: 100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-bottom: 1px solid #dee2e6;
+    background: #efefef;
+    padding: 18px 0px 0px 5px;
+    margin: 5px 0;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+/*******************************************************\
+               Task List Item
+\*******************************************************/
+.task-list-item__container {
+    width: 300px;
+    padding: 5px 10px;
+    margin: 0 auto;
+}
+
+.task-item__container {
+    cursor: pointer;
+    padding: 0 0 0 2px;
+}
+
+.task-status__container {
+    margin-top: 10px;
+}
+
+.task-status {
+    height: 100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-bottom: 1px solid #dee2e6;
+    background: #efefef;
+    padding: 18px 0px 0px 5px;
+    margin: 5px 0;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.task-title {
+    float: left;
+    display: inline-block;
+}
+
+.truncate__task-title {
+    width: 156px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+}
+
+.truncate__task-content {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.due-date {
+    display: inline;
+    font-size: 10px;
+    color: #999;
+    float: right;
+    padding-right: 10px;
+}
+
+/*******************************************************\
+               Add/Update Modal
+\*******************************************************/
+
+.modal-content {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 16%);
+}
+
+.confirm-modal .modal-content{
+    width: 50%!important;
+}
+
+
+
+/*******************************************************\
+               Custom Bootstrap Components
+\*******************************************************/
+.panel {
+    background: transparent;
+}
+
+.panel-default {
+    border: 0px;
+}
+
+.panel-body {
+    padding: 0px;
+    height: 82px;
+}
+
+
+/*******************************************************\
+               Loading
+\*******************************************************/
+
+.loding-error {
+    padding-left: 20px;
+}
+
+.loding {
+    /**
+     * The loading bar is centered both vertically and horizontally using
+     * top: 50%; and left: 50%; and then pulling it back using negative margins.
+     */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 20px;
+    width: 200px;
+    margin-top: -10px; /* half the height */
+    margin-left: -100px; /* half the width */
+    border-radius: 20px;
+    background-image: -webkit-linear-gradient(-45deg, #34c6d3 25%, rgba(255, 154, 26, 0) 25%, rgba(255, 154, 26, 0) 50%, #34c6d3 50%, #34c6d3 75%, rgba(255, 154, 26, 0) 75%);
+    background-image: -moz-linear-gradient(-45deg, #34c6d3 25%, rgba(255, 154, 26, 0) 25%, rgba(255, 154, 26, 0) 50%, #34c6d3 50%, #34c6d3 75%, rgba(255, 154, 26, 0) 75%);
+    background-image: -o-linear-gradient(-45deg, #34c6d3 25%, rgba(255, 154, 26, 0) 25%, rgba(255, 154, 26, 0) 50%, #34c6d3 50%, #34c6d3 75%, rgba(255, 154, 26, 0) 75%);
+    background-image: linear-gradient(-45deg, #34c6d3 25%, rgba(255, 154, 26, 0) 25%, rgba(255, 154, 26, 0) 50%, #34c6d3 50%, #34c6d3 75%, rgba(255, 154, 26, 0) 75%);
+    background-color: #d3d3d3;
+    background-size: 50px 50px;
+    border: 1px solid #34c6d3;
+    border-bottom-color: #34c6d3;
+    -webkit-box-shadow: inset 0 10px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 10px 0 rgba(255, 255, 255, 0.2);
+    -webkit-animation: move 2s linear infinite;
+    -moz-animation: move 2s linear infinite;
+    -ms-animation: move 2s linear infinite;
+    animation: move 2s linear infinite;
+}
+
+/**
+ * The ::before element creates the darker box around the loading bar itself.
+ */
+
+.loding::before {
+    content: " ";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03), inset 0 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03), inset 0 1px 0 rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+/**
+ * Animate the stripes.
+ */
+
+@-webkit-keyframes move {
+    0%   { background-position: 0 0; }
+    100% { background-position: 50px 50px; }
+}
+
+@-moz-keyframes move {
+    0%   { background-position: 0 0; }
+    100% { background-position: 50px 50px; }
+}
+
+@-ms-keyframes move {
+    0%   { background-position: 0 0; }
+    100% { background-position: 50px 50px; }
+}
+
+@-webkit-keyframes move {
+    0%   { background-position: 0 0; }
+    100% { background-position: 50px 50px; }
+}
